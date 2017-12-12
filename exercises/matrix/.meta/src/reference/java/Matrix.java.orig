@@ -1,0 +1,69 @@
+import java.util.regex.Pattern;
+
+<<<<<<< HEAD
+class Matrix {
+||||||| merged common ancestors
+public class Matrix {
+=======
+ class Matrix {
+>>>>>>> made the class as the package private and the removed the public access modifier
+    private int[][] matrix;
+    private static Pattern spacePattern = Pattern.compile(" ");
+    private static Pattern newlinePattern = Pattern.compile("\\n");
+
+     Matrix(String matrixAsString) {
+        String[] rows = newlinePattern.split(matrixAsString);
+        matrix = new int[rows.length][];
+        for (int i = 0; i < rows.length; i++) {
+            String[] columnValues = spacePattern.split(rows[i]);
+            matrix[i] = new int[columnValues.length];
+            for (int j = 0; j < columnValues.length; j++) {
+                matrix[i][j] = Integer.parseInt(columnValues[j]);
+            }
+        }
+    }
+
+<<<<<<< HEAD
+    int[] getRow(int rowNumber) {
+||||||| merged common ancestors
+    public int[] getRow(int rowNumber) {
+=======
+     int[] getRow(int rowNumber) {
+>>>>>>> made the class as the package private and the removed the public access modifier
+        return matrix[rowNumber];
+    }
+
+<<<<<<< HEAD
+    int[] getColumn(int columnNumber) {
+||||||| merged common ancestors
+    public int[] getColumn(int columnNumber) {
+=======
+     int[] getColumn(int columnNumber) {
+>>>>>>> made the class as the package private and the removed the public access modifier
+        int[] column = new int[matrix.length];
+        for(int i = 0; i < matrix.length; i++) {
+            column[i] = matrix[i][columnNumber];
+        }
+        return column;
+    }
+
+<<<<<<< HEAD
+    int getRowsCount() {
+||||||| merged common ancestors
+    public int getRowsCount() {
+=======
+     int getRowsCount() {
+>>>>>>> made the class as the package private and the removed the public access modifier
+        return matrix.length;
+    }
+
+<<<<<<< HEAD
+    int getColumnsCount() {
+||||||| merged common ancestors
+    public int getColumnsCount() {
+=======
+     int getColumnsCount() {
+>>>>>>> made the class as the package private and the removed the public access modifier
+        return matrix[0].length;
+    }
+}
