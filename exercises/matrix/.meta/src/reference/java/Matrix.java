@@ -5,7 +5,7 @@ class Matrix {
     private static Pattern spacePattern = Pattern.compile(" ");
     private static Pattern newlinePattern = Pattern.compile("\\n");
 
-     public Matrix(String matrixAsString) {
+     Matrix(String matrixAsString) {
         String[] rows = newlinePattern.split(matrixAsString);
         matrix = new int[rows.length][];
         for (int i = 0; i < rows.length; i++) {
