@@ -25,6 +25,16 @@
     },
     {
       "core": false,
+      "difficulty": 1,
+      "slug": "reverse-string",
+      "topics": [
+        "strings"
+      ],
+      "unlocked_by": "two-fer",
+      "uuid": "2c8afeed-480e-41f3-ad58-590fa8f88029"
+    },
+    {
+      "core": false,
       "difficulty": 2,
       "slug": "rna-transcription",
       "topics": [
@@ -927,6 +937,19 @@
       ],
       "unlocked_by": "rotational-cipher",
       "uuid": "162bebdc-9bf2-43c0-8460-a91f5fc16147"
+    },
+    {
+      "core": false,
+      "difficulty": 7,
+      "slug": "markdown",
+      "topics": [
+        "strings",
+        "conditionals",
+        "pattern_matching",
+        "refactoring"
+      ],
+      "unlocked_by": "scrabble-score",
+      "uuid": "cc18f2e5-4e36-47d6-aa60-8ca5ff54019a"
     },
     {
       "core": false,
